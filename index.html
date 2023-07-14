@@ -3,20 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
     <title>Student Registration Form</title>
 
     <style>
         body {
-    background-color: #800080;
-    color: white ;
-}
+        background-color: #800080;
+        color: white ;
+        } 
+        form{
+            width: 30rem;
+            height: 20rem;
+            padding: 2rem;
+       
+        }
+        .form-item{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+        }
+
     </style>
 </head>
 <body>
     <h1> Student Registration Form</h1>
     <form>
-        <table>
+        <div class="form-item">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-item">
+            <label for="tel">Telephone Number</label>
+            <input type="tel" id="tel" name="Telephone" required>
+        </div>
+
+        <div class="form-item">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="Date of birth" id="dob" required>
+        </div>
+
+        <div class="form-item">
+            <label for="adm">Admission Number</label>
+            <input type="number" id="adm" name="Admission number" required>
+        </div>
+
+        <div class="form-item">
+            <label for="gender">Gender</label>
+            <div>
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="gender">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="gender">
+            </div>
+        </div>
+       <div class="form-item">
+                    <label for="course">Course</label>
+                    <select name="course" id="course">
+                        <option value="cit">Cit</option>
+                        <option value="cit">Cbit</option>
+                    </select>
+                    <!-- <div>
+                        <label for="cit">CIT</label>
+                        <input type="radio" name="course" id="cit">
+                        <label for="cbit">CBIT</label>
+                        <input type="radio" name="course" id="cbit">
+                    </div> -->
+       </div>
+    <button type="submit" >Submit</button>
+        
+        <!-- <table>
             <tr>
                 <td>
                      Name :
@@ -72,7 +128,6 @@
                 </td>
             </tr>
               
-        </table>    
-    <script src="script.js"></script>
+        </table>     -->
 </body>
 </html>
